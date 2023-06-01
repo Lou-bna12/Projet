@@ -65,7 +65,7 @@ require_once ("connexion.php");
             } else {
                 $reqSelect = "SELECT * FROM `automobile`";
             }
-            $result = mysqli_query($connect, $query);
+            $result = mysqli_query($connect, $reqSelect);
             while ($ligne = mysqli_fetch_assoc($result)) {
                 ?>
                 <div id="auto">
