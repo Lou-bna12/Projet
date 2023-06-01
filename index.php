@@ -56,17 +56,22 @@ require_once ("connexion.php");
   </div>
   </div>
 </nav>
-        </div>
-        <div id="articles">
+ </div>
+     <div id="articles">
     <?php
             if (isset($_POST['btsubmit'])) {
                 $mc = $_POST['motcle'];
                 $reqSelect = "SELECT * FROM `automobile` WHERE `marque` LIKE '%$mc%' ";
-            } else {
+            }
+             else {
                 $reqSelect = "SELECT * FROM `automobile`";
             }
+
             $result = mysqli_query($connect, $reqSelect);
-            while ($ligne = mysqli_fetch_assoc($result)) {
+            $nbr = mysqli_num_rows($result);
+            echo "<p><b>".$nbr."</b> Résultats de votre recherche...</p>";
+            while ($ligne = mysqli_fetch_assoc($result))
+     {
                 ?>
                 <div id="auto">
                     <img src="<?php echo $ligne ['photo'] ?>"/><br/>
@@ -74,7 +79,7 @@ require_once ("connexion.php");
                     <?php echo $ligne ['prix']; ?><br />
                     <?php echo $ligne ['annee']; ?><br />
                     <?php echo $ligne ['KM']; ?>
-
+</div>
 
             <?php } ?>
         </div>

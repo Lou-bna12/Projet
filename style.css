@@ -50,19 +50,30 @@ h1{
   background-color:  #262526;
 }
 #articles{
-    width: 80%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
     padding: 2%;vertical-align: middle;
 
 }
 #auto{
+    font-family: 'Barlow', sans-serif;
      border: 1px solid #262526;
      width: 150px;
      min-height: 200px;
      margin: 10px;
-     padding-left: 20px;
+     padding-left: 10px;
      float: left;
+}
+#auto img{
+    margin: 5px;
+    width: 130px;
+    height: 100px;
+    padding: 10px;
+}
+b{
+    color: #262526;
+    font-size: 20px;
 }
 
 
