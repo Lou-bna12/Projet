@@ -46,11 +46,9 @@ require_once ("connexion.php");
         <div class="container-fluid">
         <p>Le meilleur garage de la région</p>
         <div class="divider">
-        <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid" >
-    <form class="d-flex" role="search">
-      <input class="form-control me-2" name="motcle" type="Rechercher" placeholder="Rechercher par marques..." aria-label="Rechercher">
-      <button class="btn btn-outline-success" type="submit" name="btsubmit">Rechercher</button>
+      <form name="formauto" method="post" action="">
+      <input id="motcle" type="text" name="motcle" placeholder=" Recherche par Marque...">
+      <input  class="btfind" type="submit" name="btsubmit" value="Recherche">
     </form>
   </div>
   </div>
