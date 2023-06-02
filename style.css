@@ -5,15 +5,26 @@ html,body{
     height: 100%;
     font-family: 'Rajdhani', sans-serif;
 }
+#entete{
+    margin: 0;
+    padding:0px;
+    width: 100%;
+    height: 10%;
+    position: relative;
+    overflow: hidden;
+    background-color: #f2f2f2;
+    z-index: 1;
+}
+
 
 
 h1{
  font-family: 'Rajdhani', sans-serif;
     font-weight: 700;
     font-size: 50px;
-    color:#D92332;
+    color:#262526;
     text-align: center;
-    margin-top: 4%;
+    margin-top: 2%;
     text-transform: uppercase;
     letter-spacing: 2px;
     z-index: 1;
@@ -30,14 +41,7 @@ h1{
     z-index: 1;
 }
 
-.nav-item{
-    list-style: none;
-    display: inline-block;
-    margin: 0 20px;
-    cursor: pointer;
-    transition: 0.5s;
-    text-align: right;
-}
+
 .divider{
   display: flex;
   align-items: center;
@@ -108,8 +112,117 @@ b{
     color: #262526;
     font-size: 20px;
 }
+#logo{
+    
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 20% ;
+    height: 20% ;
+
+}
 
 
+/*---------------login---------------*/
+
+a{
+    text-decoration: none;
+    opacity: 0.8; 
+    color: #f2f2f2;
+    background-color: #D95350;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 1px solid #D95350;
+    border-right: none;
+    cursor: pointer;
+    right: 0;
+    top: 0;
+    position: absolute;
+    z-index: 10;
+    text-align: center;
+    
+
+
+}
+#entete.login{
+    opacity: 0.8; 
+    color: #D95350;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 1px solid #D95350;
+    border-right: none;
+    cursor: pointer;
+    width: 5px;
+    right: 0;
+    top: 0;
+    position: absolute;
+    z-index: 10;
+    text-align: center;
+}
+
+#entete .login:hover{
+    opacity: 1;
+    background-color: #262526;
+    color: #f6f6f6;
+    border: none;
+}
+
+
+/*****************page login*******************/
+
+#container{
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+#container h1{
+
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    color: #262526 ;
+    font-size: 25px; 
+}
+
+.formulaire{
+
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px;
+    border: 1px solid #f6f6f6;
+    background-color: #f6f6f6;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2), inset 0px 5px 5px 0px rgba(0,0,0,0.25);
+
+}
+
+.zonetext{
+   background-color: #262526;
+    color: #f6f6f6;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+
+}
+
+.submit{
+    background-color: #D95350;
+    color: #f6f6f6;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+.submit:hover{
+    background-color: #f6f6f6;
+    color: #262526;
+    border: 1px solid #262526;
+}
     
     
     
