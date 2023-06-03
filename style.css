@@ -1,4 +1,4 @@
-html,body{
+html, body{
     margin: 0;
     padding: 0;
     width: 100%;
@@ -7,7 +7,7 @@ html,body{
 }
 #entete{
     margin: 0;
-    padding:0px;
+    padding: 0;
     width: 100%;
     height: 10%;
     position: relative;
@@ -108,6 +108,7 @@ h1{
     height: 100px;
     padding: 10px;
 }
+
 b{
     color: #262526;
     font-size: 20px;
@@ -128,38 +129,23 @@ b{
 
 a{
     text-decoration: none;
-    opacity: 0.8; 
-    color: #f2f2f2;
-    background-color: #D95350;
-    font-weight: bold;
-    border-radius: 30px;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: 1px solid #D95350;
-    border-right: none;
-    cursor: pointer;
-    right: 0;
-    top: 0;
-    position: absolute;
-    z-index: 10;
-    text-align: center;
-    
-
-
+    color: #262526;
+     
 }
-#entete.login{
+
+#entete .login{
     opacity: 0.8; 
-    color: #D95350;
-    padding: 14px 20px;
+    padding: 10px 10px;    
     margin: 8px 0;
-    border: 1px solid #D95350;
+    background-color: #ada5a5;
     border-right: none;
     cursor: pointer;
-    width: 5px;
+    width: 200px;
+    border-radius: 40.5%;
     right: 0;
     top: 0;
     position: absolute;
-    z-index: 10;
+    z-index: 1;
     text-align: center;
 }
 
@@ -226,35 +212,65 @@ a{
     
   /*---------------Accueil---------------*/
 
-#globale{
+#global{
     width: 100%;
     padding: 5px;
     margin: 10px; 
 }
-
-#globale #profile{
+#global #profil{
     width: 20%;
     padding: 10px;
     vertical-align: middle;
     text-align: center;
     min-height: 100px;
     display: inline-block;
-    border: 1px solid #262526;
+    border: 1px solid #f6f6f6;
     background: #f6f6f6;
+    font-weight: bold ;
     box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2), inset 0px 5px 5px 0px rgba(0,0,0,0.25);
 }
-
-#globale #tableaubord{
+#global #tableaubord{
     box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2), inset 0px 5px 5px 0px rgba(0,0,0,0.25);
     min-height: 100px;
     display: inline-block;
-    border: 1px solid #262526;
+    border: 1px solid #f6f6f6;
     background: #f6f6f6;
-    width: 70%;
-    padding: 20px;
-    margin: 5px;
+    width: 78%;
     vertical-align: middle;
+    padding-top: 20px;
+    margin: 5px;
 }
+
+
+table{
+
+    caption-side: bottom;
+    border: 1px;
+    width: 100%;
+   
+
+}
+th,td{
+    border: none;
+    padding: 10px;
+}
+th{
+    border: none;
+    padding: 10px;
+}
+
+.photocar{
+    width: 130px;
+    height: 100px;
+    border-radius: 5%;
+    border: 1px solid;
+    margin: 5px;
+    padding: 5px;
+    background-color: #f6f6f6;
+
+    
+}
+
 
 
 

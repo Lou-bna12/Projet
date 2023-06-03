@@ -15,7 +15,7 @@ require_once ("connexion.php");
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Great+Vibes&family=Montserrat:ital,wght@1,200&family=Poppins&family=Rajdhani:wght@300;400&family=Raleway&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <title>Garage V.Parrot</title>
 </head>
 <body>
