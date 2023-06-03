@@ -244,19 +244,22 @@ a{
 
 table{
 
+
     caption-side: bottom;
     border: 1px;
     width: 100%;
    
 
 }
-th,td{
+th, td{
     border: none;
     padding: 10px;
+
 }
 th{
     border: none;
     padding: 10px;
+    background-color: #D95350;
 }
 
 .photocar{

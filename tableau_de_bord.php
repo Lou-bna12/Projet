@@ -52,8 +52,8 @@ $nbr = mysqli_num_rows($result);
                 <td><?php echo $ligne ['prix']; ?></td>
                 <td><?php echo $ligne ['annee']; ?></td>
                 <td><?php echo $ligne ['KM']; ?></td>
-                <td><a href="modifier.php"><img src="images/modifier.jpg" width="50px" height="50px"></a></td>
-                <td><a href="supprimer.php"><img src="images/supprimer.png" width="50px" height="50px"></a></td>
+                <td><a href="modifier.php?mod=<?php echo $ligne ['imma']; ?>"><img src="images/modifier.jpg" width="50px" height="50px"></a></td>
+                <td><a href="supprimer.php?supcar=<?php echo $ligne ['imma']; ?>"><img src="images/supprimer.png" width="50px" height="50px"></a></td>
             </tr>
 
         <?php
