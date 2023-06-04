@@ -14,6 +14,7 @@ require_once ("connexion.php");
 <body>
     
 <div id="container">
+
     <form name="formAdd" action="" method="post" class="formulaire" enctype="multipart/form-data">
 
         <h2 align-text="center">Ajouter une nouvelle voiture</h2>
@@ -28,10 +29,10 @@ require_once ("connexion.php");
         <input type="number" name="txtPrix" class="zonetext" placeholder="Entrer le prix de la voiture" required>
 
         <label><b>Année : </b></label>
-        <input type="text" name="txtAnnee" class="zonetext" placeholder="Entrer l'année de la voiture" required>
+        <input type="number" name="txtAnnee" class="zonetext" placeholder="Entrer l'année de la voiture" required>
 
         <label><b>Kilométrage : </b></label>
-        <input type="text" name="txtkm" class="zonetext" placeholder="Entrer le kilométrage de la voiture" required>
+        <input type="number" name="txtkm" class="zonetext" placeholder="Entrer le kilométrage de la voiture" required>
 
         <label><b>Photo : </b></label>
         <input type="file" name="txtphoto" class="zonetext" placeholder="Choisir une image" required>
@@ -52,13 +53,13 @@ require_once ("connexion.php");
         $annee=$_POST['txtAnnee'];
         $KM=$_POST['txtkm'];
 
-        $images=$_FILES['txtphoto']['tmp_name'];
+        $image=$_FILES['txtphoto']['tmp_name'];
 
-        $traget="img/". $FILES['txtphoto']['name'];
+        $traget="images/".$_FILES['txtphoto']['name'];
 
-        move_uploaded_file($images,$traget);
+        move_uploaded_file($image,$traget);
         
-        $reqAdd="INSERT INTO automobile(imma,marque,prix,photo,KM,annee) VALUES ('$imma','$marque','$prix','$annee','$KM','$traget')";
+        $reqAdd="INSERT INTO automobile(imma,marque,prix,annee,KM,photo) VALUES ('$imma','$marque','$prix','$annee','$KM','$traget')";
 
         $result=mysqli_query($connect, $reqAdd);
          
