@@ -16,21 +16,45 @@ require_once ("connexion.php");
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Great+Vibes&family=Montserrat:ital,wght@1,200&family=Poppins&family=Rajdhani:wght@300;400&family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" type="text/css">
+
     <title>Garage V.Parrot</title>
 </head>
 <body>
-    <div id="entete">
-        <a href="Login.php" class="login">Connectez-vous</a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.php"><img src="Garage.png" width="60px"height="60px"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">Nos services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacte.html">Nous contacter</a>
+        </li>
+        <li class="nav-item">
+         <a href="login.php" class="nav-link">Connexion</a>
+       </li>
+     </ul>
+    </div>
+  </div>
+</nav>
 
-</div>
-        
+    <div id="entete">
+      
+
         <h1>Garage V.Parrot</h1>
      <img src="Logo G.png" alt="logo"  id="logo">
         <div class="container-fluid">
         <p>Le meilleur garage de la région</p>
         <div class="divider">
       <form name="formauto" method="post" action="">
-      <input id="motcle" type="text" name="motcle" placeholder=" Recherche par Marque...">
+      <input id="motcle" type="text" name="motcle" placeholder=" Recherche par marque...">
       <input  class="btfind" type="submit" name="btsubmit" value="Recherche">
     </form>
   </div>

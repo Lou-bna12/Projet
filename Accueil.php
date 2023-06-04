@@ -26,6 +26,7 @@ require_once ('connexion.php');?>
 
 </head>
 <body>
+
     <div id="global">
 
         <div id="profil">

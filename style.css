@@ -5,16 +5,17 @@ html, body{
     height: 100%;
     font-family: 'Rajdhani', sans-serif;
 }
+
 #entete{
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 10%;
     position: relative;
     overflow: hidden;
-    background-color: #f2f2f2;
+    background-color: transparent;
     z-index: 1;
+
 }
+
 
 
 
@@ -127,25 +128,25 @@ b{
 
 /*---------------login---------------*/
 
-a{
+/*a{
     text-decoration: none;
     color: #262526;
-     
-}
+    display: flex;
+      
+}*/
+
 
 #entete .login{
     opacity: 0.8; 
-    padding: 10px 10px;    
+    padding: 14px 20px;    
     margin: 8px 0;
     background-color: #ada5a5;
     border-right: none;
     cursor: pointer;
-    width: 200px;
-    border-radius: 40.5%;
+    width: 5px;
     right: 0;
-    top: 0;
     position: absolute;
-    z-index: 1;
+    z-index: 10;
     text-align: center;
 }
 
