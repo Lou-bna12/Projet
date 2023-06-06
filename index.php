@@ -13,8 +13,9 @@ require_once ("connexion.php");
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@1,200&family=Poppins&family=Rajdhani:wght@300;400&family=Raleway&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Great+Vibes&family=Montserrat:ital,wght@1,200&family=Poppins&family=Rajdhani:wght@300;400&family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&family=Great+Vibes&family=Montserrat:ital,wght@1,200&family=Poppins&family=Rajdhani:wght@300;400&family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" type="text/css">
 
     <title>Garage V.Parrot</title>
@@ -35,7 +36,7 @@ require_once ("connexion.php");
           <a class="nav-link" href="services.html">Nos services</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="contacte.html">Nous contacter</a>
+          <a class="nav-link" href="inscription.php">Nous contacter</a>
         </li>
         <li class="nav-item">
          <a href="login.php" class="nav-link">Connexion</a>
