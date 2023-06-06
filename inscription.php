@@ -65,19 +65,14 @@ if(isset($_POST['inscription'])){
 
      if($valid){
 
-     //   $mdp = crypt($mdp,"$6$rounds=$loubnahaddadsellam20av1989$");
+        //$mdp = crypt($mdp,"$6$rounds=5000$loubnahaddadjhgfdsqerhklioijjkhhgsellamjhgugug20av1989$");
 
         $date_creation_compte = date('Y-m-d H:i:s');
 
 
         //On insert nos données dans la table users
-        
-        $reqAdd = "INSERT INTO users(nom,prenom,mail,num,mdp,date_creation_compte) VALUES (?,?,?,?,?,?)";
-     
-        
-       
-       
-       array($nom, $prenom, $mail, $num, $mdp, $date_creation_compte);
+
+        $reqAdd = "INSERT INTO users(nom,prenom,mail,num,mdp,date_creation_compte) VALUES (?,?,?,?,?,?)".array($nom, $prenom, $mail, $num, $mdp, $date_creation_compte);
 
        header('Location: index.php');
        exit;
