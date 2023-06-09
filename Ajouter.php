@@ -35,6 +35,9 @@ require_once ("connexion.php");
         <label><b>Kilométrage : </b></label>
         <input type="number" name="txtkm" class="zonetext" placeholder="Entrer le kilométrage de la voiture" required>
 
+        <labe><b>Catégorie : </b><label>
+         <input type="text" name="txtCat" class="zonetext" placeholder="Entrer la catégorie de la voiure" required> 
+
         <label><b>Photo : </b></label>
         <input type="file" name="txtphoto" class="zonetext" placeholder="Choisir une image" required>
 
@@ -53,6 +56,7 @@ require_once ("connexion.php");
         $prix=$_POST['txtPrix'];
         $annee=$_POST['txtAnnee'];
         $KM=$_POST['txtkm'];
+        $Cat=$_post['txtCat'];
 
         $image=$_FILES['txtphoto']['tmp_name'];
 
@@ -60,7 +64,7 @@ require_once ("connexion.php");
 
         move_uploaded_file($image,$traget);
         
-        $reqAdd="INSERT INTO automobile(imma,marque,prix,annee,KM,photo) VALUES ('$imma','$marque','$prix','$annee','$KM','$traget')";
+        $reqAdd="INSERT INTO automobile(imma,marque,prix,annee,KM,photo,catégories) VALUES ('$imma','$marque','$prix','$annee','$KM','$Cat', '$traget')";
 
         $result=mysqli_query($connect, $reqAdd);
          
